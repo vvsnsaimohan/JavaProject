@@ -1,0 +1,48 @@
+register            - private strings (12)
+                      function regsetdata(13-15)
+
+login               - private string (7)
+            		void logsetdata  (8-10)
+
+admin               - abstract class adminapp (8-15)
+          			 extends adminapp (16)
+           			void dashboardd( 215 - 266)
+           			void logout (268 - 272)
+company manger      - abstract class companapp(11-16)
+                 		extends companapp(17)
+                 		private string (19)
+                 		function void compsetdata(20-22)
+                 		function void invoice (198 - 240)
+distributor         - normal class distapp(5-9)
+                		extends distapp(10)
+                		private strings (11)
+                		voided distsetdata(12 - 14)
+                
+addmedi             - abstract class addapp (8 - 15)        
+                 		extends addapp(16)
+                 		private string (17)
+                 		void add()(103 - 129)        (OVERRIDE)
+              
+delmedi             - extends addapp(8)         
+                		private string (9)
+                		public void add() (66 - 87)  (OVERRIDE)
+
+updmedi             - extends addapp(8)
+                		 private string (9)
+                		 void add() (99-127)         (OVERRIDE)  
+shortlist           - extends distapp (10)
+              
+search              - extends distapp(8)
+
+expdates   		  - extends distapp(7)
+       
+order			  - extends distapp(9)
+        			void buy() (65 - 100)        (polymorph)
+				void buy(int i) (100 - 104)  (polymorph)
+
+payments     	  - interface (7 - 10) 
+                		extends distapp implements payapp (11)
+                		private long accno
+                		private    (12 - 14)
+                		void pay   (16 - 89) 
+                		void bill  (92 - 135)

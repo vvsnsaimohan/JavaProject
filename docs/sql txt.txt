@@ -1,0 +1,11 @@
+create table compman(name text,email text NOT null,phno text,password text Not null,role text,cname text,primary key(email));
+
+create table distributer(name text,email text NOT null,phno text,password text Not null,role text,primary key(email));
+
+create table medicine(cname text,mid int,mname text,mfgdate date,expdate date,mrp decimal(10,2),quantity int,mtype text,primary key(mid));
+
+select count(role) as nocm from compman where role='Company Manager';
+
+
+
+
